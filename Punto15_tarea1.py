@@ -1,0 +1,14 @@
+# Punto 15 Crear un programa que pida al usuario ingresar una cadena de texto y determine si es un palíndromo o no.
+
+def es_palindromo(cadena):
+    cadena = cadena.replace(" ", "").lower() 
+    return cadena == cadena[::-1]
+
+def main():
+    cadena_ingresada = input("Ingresa una cadena de texto: ")
+
+    if es_palindromo(cadena_ingresada):
+        print("La cadena es un palíndromo.")
+    else:
+        print("La cadena no es un palíndromo.")
+main()
